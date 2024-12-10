@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container">
+      <!-- Formulaire d'inscription -->
+      <div>
+        <h2>Inscription</h2>
+        <form action="/signup" method="POST">
+          <div>
+            <label>Email</label>
+            <input type="email" name="email" required>
+          </div>
+          <div>
+            <label>Mot de passe</label>
+            <input type="password" name="password" required>
+          </div>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </div>
+
+      <!-- Formulaire de connexion -->
+      <div>
+        <h2>Connexion</h2>
+        <form action="/login" method="POST">
+          <div>
+            <label>Email</label>
+            <input type="email" name="username" required>
+          </div>
+          <div>
+            <label>Mot de passe</label>
+            <input type="password" name="password" required>
+          </div>
+          <button type="submit">Se connecter</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
